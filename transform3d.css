@@ -1,0 +1,74 @@
+.output {
+ height:300px;
+ overflow:hidden;
+ position:relative;
+ float:right;
+ background-color:#fff;
+ width:40%;
+ overflow:hidden;
+ box-shadow:2px 2px 5px -2px rgba(0,0,0,.2);
+ padding:1em
+}
+.output section {
+ height:100%;
+ text-align:center
+}
+.output section {
+ display:flex;
+ align-items:center;
+ justify-content:center
+}
+#default-example {
+ background:linear-gradient(skyblue,khaki);
+ perspective:800px;
+ perspective-origin:150% 150%
+}
+#example-element {
+ width:100px;
+ height:100px;
+ perspective:550px;
+ transform-style:preserve-3d
+}
+.face {
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ width:100%;
+ height:100%;
+ position:absolute;
+ backface-visibility:inherit;
+ font-size:60px;
+ color:#fff
+}
+.front {
+ background:rgba(500,500,500,.3);
+ transform:translateZ(50px)
+}
+.new {
+ background:rgba(500,500,500,.3);
+ transform:translateZ(-150px)
+}
+.not {
+ background:rgba(90,90,90,.7);
+ transform:translateX(-30px) translateY(-30px) translateZ(-50px) 
+}
+.back {
+ background:rgba(0,210,0,.7);
+ transform:rotateY(180deg) translateZ(50px)
+}
+.right {
+ background:rgba(210,0,0,.7);
+ transform:rotateY(90deg) translateZ(50px)
+}
+.left {
+ background:rgba(0,0,210,.7);
+ transform:rotateY(-90deg) translateZ(50px)
+}
+.top {
+ background:rgba(210,210,0,.7);
+ transform:rotateX(90deg) translateZ(50px)
+}
+.bottom {
+ background:rgba(210,0,210,.7);
+ transform:rotateX(-90deg) translateZ(50px)
+}
